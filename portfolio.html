@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawad's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Jawad Ahmad</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="content">
+            <img src="mypic.jpg" alt="Jawad Ahmad" class="profile-img">
+            <h1>Hi, I'm Jawad Ahmad</h1>
+            <h2 id="job-title">Frontend Developer</h2>
+            <p>I design and build user-friendly websites.</p><br>
+            <a href="#portfolio" class="btn">See My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hi, I’m Jawad I'm a passionate frontend developer skilled in HTML, CSS, and JavaScript.</p>
+    </section>
+<br>
+<br>
+    <section id="portfolio" class="portfolio">
+        <h2>My Work</h2><br>
+        <div class="projects">
+            <div class="project">
+                <img src="prog1.png" alt="Project 1">
+                <h3>Amazon Clone</h3>
+            </div>
+            <div class="project">
+                <img src="prog2.png" alt="Project 2">
+                <h3>Portfolio</h3>
+            </div>
+            <div class="project">
+                <img src="prog3.png" alt="Project 2">
+                <h3>Spotify Clone</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: sheikhjawadx@gmail.com</p><br>
+        <div class="social-icons">
+            <a target="_blank" href="https://www.instagram.com/sheikhjawadx?igsh=MWk0NTN2eTJwZmo5aA=="><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://x.com/sheikhjawadx?t=Wp7wnEgJnQvZvckoh75RZQ&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+            <a target="_blank" href="www.linkedin.com/in/jawad-ahmad-583b0a31b"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jawad Ahmad. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+            menuToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>
